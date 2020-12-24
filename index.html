@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
+</head>
+
+<body>
+    <main class="main itm">
+        <h1 class="title__itm">Узнайте индекс массы вашего тела</h1>
+        <div class="main__form-block">
+        <div class="form__field">
+            <div class="form__group">
+                <div class="weight form__block">
+                    <label for="inp_1" class="form__text">Укажите ваш рост</label>
+                    <input type="number" class="form-control input__text" id="inp_1"><span class="form__text sub__text">см</span>
+                </div>
+                <div class="height form__block">
+                    <label for="inp_2" class="form__text">Напишите ваш вес</label>
+                    <input type="number" class="form-control input__text" id="inp_2"><span class="form__text sub__text">кг</span>
+                </div>
+                <button onclick="imt(document.getElementById('inp_1').value, document.getElementById('inp_2').value)"
+                    class="btn">Рассчить</button>
+            </div>
+        </div>
+        <div class="text__block">
+            <h2 class="title__itm"></h2>
+        </div>
+    </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
