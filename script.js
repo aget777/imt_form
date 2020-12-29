@@ -1,4 +1,8 @@
 function imt(height, weight) {
+    height = document.getElementById('inp_1').value;
+    console.log(height);
+    weight = document.getElementById('inp_2').value;
+    console.log(weight);
     //let weight = Number(prompt('Укажите ваш вес'));
     if(isNaN(height) || height < 100) {
         if (isNaN(height)) {
