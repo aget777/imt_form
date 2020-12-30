@@ -8,30 +8,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        
+
 </head>
 
 <body>
     <main class="main itm">
-        <h1 class="title__itm">Узнайте индекс массы вашего тела</h1>
+        <div class="titel__block">
+            <h1 class="title__itm">Узнайте индекс массы вашего тела</h1>
+        </div>
         <div class="main__form-block">
-        <div class="form__field">
-            <div class="form__group">
+            <div class="form__field calculate_block">
+                <div class="form__group">
+                    <div class="weight form__block">
+                        <label for="inp_1" class="form__text">Укажите ваш рост</label>
+                        <input type="number" class="form-control input__text" id="inp_1"><span
+                            class="form__text sub__text">см</span>
+                    </div>
+                    <div class="height form__block">
+                        <label for="inp_2" class="form__text">Напишите ваш вес</label>
+                        <input type="number" class="form-control input__text" id="inp_2"><span
+                            class="form__text sub__text">кг</span>
+                    </div>
+                    <div class="result__block">
+                        <button onclick="imt()" class="btn">Рассчить</button>
+                        <p class="form__text">Индекс массы вашего тела</p>
+                        <div class="result-form">
+                            <p class="result-text" id="result">итого</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__field text__block">
                 <div class="weight form__block">
-                    <label for="inp_1" class="form__text">Укажите ваш рост</label>
-                    <input type="number" class="form-control input__text" id="inp_1"><span class="form__text sub__text">см</span>
+                    <p class="text__block-info" id="text_1"></p>
                 </div>
                 <div class="height form__block">
-                    <label for="inp_2" class="form__text">Напишите ваш вес</label>
-                    <input type="number" class="form-control input__text" id="inp_2"><span class="form__text sub__text">кг</span>
+                    <p class="text__block-info" id="text_2"></p>
                 </div>
-                <button onclick="imt()" class="btn">Рассчить</button>
+                <p class="result__message" id="resultMessage"></p>
             </div>
         </div>
-        <div class="text__block">
-            <h2 class="title__itm"></h2>
-        </div>
-    </div>
     </main>
 </body>
 <script src="script.js"></script>
